@@ -19,6 +19,17 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
     var currencies = arrayOf<String?>("Indian Rupees",
         "US Dollar",
+        "Australian Dollar",
+        "Canadian Dollar",
+        "Euro",
+        "UAE Dirham",
+        "Kuwaiti Dinar",
+        "Bahraini Dinar",
+        "Rial",
+        "peso",
+        "Rand",
+        "Swiss Franc",
+        "Pound",
         "Japanese Yen",
         "Russian Ruble")
 
@@ -124,6 +135,18 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         return indianRupee * when (secondCurrency){
             "Indian Rupees" -> 1.0
             "US Dollar" -> 0.012
+            "Australian Dollar" -> 0.019
+            "Canadian Dollar" -> 0.017
+            "Euro" -> 0.011
+            "UAE Dirham" -> 0.044
+            "Kuwaiti Dinar" -> 0.0037
+            "Bahraini Dinar" -> 0.0045
+            "Saudi Riyal" -> 0.045
+            "Rial" -> 3.01
+            "peso" -> 0.68
+            "Rand" -> 0.23
+            "Swiss Franc" -> 0.011
+            "Uk Pound" -> 0.0099
             "Japanese Yen" -> 1.60
             "Russian Ruble" -> 0.93
             else -> 0.0
@@ -133,7 +156,19 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private fun convertOtherToIndianCurrency(amt: Double, firstCurrency: String): Double {
         return amt * when (firstCurrency){
             "Indian Rupees" -> 1.0
-            "US Dollar" -> 82.63
+            "US Dollar" -> 83.27
+            "Australian Dollar" -> 53.12
+            "Canadian Dollar" -> 60.15
+            "Euro" -> 88.47
+            "UAE Dirham" -> 22.67
+            "Kuwaiti Dinar" -> 269.45
+            "Bahraini Dinar" -> 220.87
+            "Saudi Riyal" ->22.20
+            "Rial" -> 0.33
+            "peso" -> 1.47
+            "Rand" -> 4.44
+            "Swiss Franc" -> 92.37
+            "UK Pound" -> 101.27
             "Japanese Yen" -> 0.62
             "Russian Ruble" -> 1.07
             else -> 0.0

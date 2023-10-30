@@ -155,6 +155,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
     private fun convertOtherToIndianCurrency(amt: Double, firstCurrency: String): Double {
         return amt * when (firstCurrency){
+
             "Indian Rupees" -> 1.0
             "US Dollar" -> 83.27
             "Australian Dollar" -> 53.12
@@ -172,6 +173,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             "Japanese Yen" -> 0.62
             "Russian Ruble" -> 1.07
             else -> 0.0
+
         }
     }
 

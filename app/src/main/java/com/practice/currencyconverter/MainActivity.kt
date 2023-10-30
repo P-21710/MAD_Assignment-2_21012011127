@@ -17,7 +17,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private lateinit var ed1: EditText
     private lateinit var ed2: EditText
 
-    var currencies = arrayOf<String?>("Indian Rupees",
+    var currencies = arrayOf<String?>(
+
+        "Indian Rupees",
         "US Dollar",
         "Australian Dollar",
         "Canadian Dollar",
@@ -31,7 +33,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         "Swiss Franc",
         "Pound",
         "Japanese Yen",
-        "Russian Ruble")
+        "Russian Ruble"
+
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
